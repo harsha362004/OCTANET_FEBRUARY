@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My New Site</title>
+    <style>
+        body {
+            background-image: url("https://static.vecteezy.com/system/resources/previews/027/597/306/large_2x/nature-s-tropical-leaves-cast-shadows-and-sunlight-on-a-white-wall-texture-for-a-wallpaper-background-creating-a-shadow-overlay-effect-silhouette-concept-free-photo.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh; 
+            margin: 0; 
+            padding: 0; 
+            font-family: Arial, sans-serif; 
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.5);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            text-align: center;
+            position: relative;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .rectangle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .rectangle {
+            width: 270px;
+            height: auto;
+            background-color: transparent;
+            border: 2px solid rgba(212,169,108,0.5);
+            margin: 10px;
+            border-radius: 10px;
+            padding-top: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            font-size: 17px;
+            position: relative;
+        }
+
+        .day-name {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .task-input {
+            width: calc(80% - 22px); 
+            margin: 0 auto;
+            display: block;
+            border: none;
+            border-bottom: 2px solid rgba(212,169,108,0.8);
+            padding: 5px;
+            font-size: 16px;
+            outline: none;
+            background-color: transparent;
+            margin-bottom: 10px;
+            float: left;
+            margin-left: 9px;
+            margin-top: 2px;
+        }
+
+        .checkbox-container {
+            display: inline-block;
+            margin-left: 10px; 
+        }
+
+        .checkbox-label {
+            font-size: 14px;
+            margin-left: 5px; /
+        }
+
+        .priority-select {
+            width: 100px; 
+            margin-right: 10px;
+            padding: 5px;
+            margin-left: 10px;
+            font-size: 16px;
+            float: left;
+            margin-bottom: 10px;
+            border-color: rgb(212,169,108);
+            border-radius: 5px;
+        }
+
+        .new-layout {
+            justify-content: left;
+            align-items: left;
+            margin-top: 20px;
+        }
+
+        .date-input {
+            width: 100px; 
+            padding: 5px;
+            font-size: 13px;
+            border: 1px solid rgba(212,169,108,0.8);
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">To-Do-List</div>
+        <div class="rectangle-container">
+
+            <!-- Days -->
+            <div class="rectangle">
+                <div class="day-name">SUNDAY</div>
+                <input type="text" class="task-input" placeholder="Enter task name">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="task" name="task">
+                    <label for="task" class="checkbox-label"></label>
+                </div>
+                <div class="new-layout">
+                    <select class="priority-select">
+                        <option value="" disabled selected hidden>Priority</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                    <input type="date" class="date-input" placeholder="Deadline">
+                </div>
+            </div>
+
+            <div class="rectangle">
+                <div class="day-name">MONDAY</div>
+                <input type="text" class="task-input" placeholder="Enter task name">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="task" name="task">
+                    <label for="task" class="checkbox-label"></label>
+                </div>
+                <div class="new-layout">
+                    <select class="priority-select">
+                        <option value="" disabled selected hidden>Priority</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                    <input type="date" class="date-input" placeholder="Deadline">
+                </div>
+            </div>
+
+            <div class="rectangle">
+                <div class="day-name">TUESDAY</div>
+                <input type="text" class="task-input" placeholder="Enter task name">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="task" name="task">
+                    <label for="task" class="checkbox-label"></label>
+                </div>
+                <div class="new-layout">
+                    <select class="priority-select">
+                        <option value="" disabled selected hidden>Priority</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                    <input type="date" class="date-input" placeholder="Deadline">
+                </div>
+            </div>
+
+            <div class="rectangle">
+                <div class="day-name">WEDNESDAY</div>
+                <input type="text" class="task-input" placeholder="Enter task name">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="task" name="task">
+                    <label for="task" class="checkbox-label"></label>
+                </div>
+                <div class="new-layout">
+                    <select class="priority-select">
+                        <option value="" disabled selected hidden>Priority</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                    <input type="date" class="date-input" placeholder="Deadline">
+                </div>
+            </div>
+
+            <div class="rectangle">
+                <div class="day-name">THURSDAY</div>
+                <input type="text" class="task-input" placeholder="Enter task name">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="task" name="task">
+                    <label for="task" class="checkbox-label"></label>
+                </div>
+                <div class="new-layout">
+                    <select class="priority-select">
+                        <option value="" disabled selected hidden>Priority</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                    <input type="date" class="date-input" placeholder="Deadline">
+                </div>
+            </div>
+
+            <div class="rectangle">
+                <div class="day-name">FRIDAY</div>
+                <input type="text" class="task-input" placeholder="Enter task name">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="task" name="task">
+                    <label for="task" class="checkbox-label"></label>
+                </div>
+                <div class="new-layout">
+                    <select class="priority-select">
+                        <option value="" disabled selected hidden>Priority</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                    <input type="date" class="date-input" placeholder="Deadline">
+                </div>
+            </div>
+
+            <div class="rectangle">
+                <div class="day-name">SATURDAY</div>
+                <input type="text" class="task-input" placeholder="Enter task name">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="task" name="task">
+                    <label for="task" class="checkbox-label"></label>
+                </div>
+                <div class="new-layout">
+                    <select class="priority-select">
+                        <option value="" disabled selected hidden>Priority</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                    <input type="date" class="date-input" placeholder="Deadline">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function createNewTaskLine(container) {
+            const newTaskLine = document.createElement('div');
+            newTaskLine.className = 'new-layout';
+            newTaskLine.innerHTML = `
+                <input type="text" class="task-input" placeholder="Enter task name">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="task" name="task">
+                    <label for="task" class="checkbox-label"></label>
+                </div>
+                <div class="new-layout">
+                    <select class="priority-select">
+                        <option value="" disabled selected hidden>Priority</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                    <input type="date" class="date-input" placeholder="Deadline">
+                </div>
+            `;
+            container.appendChild(newTaskLine);
+            const inputs = newTaskLine.querySelectorAll('input, select');
+            inputs[0].focus();
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                const rectangle = event.target.closest('.rectangle');
+                createNewTaskLine(rectangle);
+            }
+        }
+
+        document.body.addEventListener('keypress', handleKeyPress);
+    </script>
+</body>
+</html>
